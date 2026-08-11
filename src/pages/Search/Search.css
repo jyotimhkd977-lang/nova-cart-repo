@@ -1,0 +1,16 @@
+.nc-search { padding: 20px 24px 80px; }
+.nc-search__bar { max-width: 640px; margin: 24px 0 40px; }
+.nc-search__hints { display: flex; flex-direction: column; gap: 32px; }
+.nc-search__hints h4 { font-size: 0.85rem; color: var(--color-text-soft); margin-bottom: 14px; }
+.nc-search__chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.nc-search__chips button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-out-sm);
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: box-shadow 0.2s ease;
+}
+.nc-search__chips button:hover { box-shadow: var(--shadow-hover); color: var(--color-primary); }
+.nc-search__count { color: var(--color-text-soft); font-size: 0.85rem; margin-bottom: 20px; }

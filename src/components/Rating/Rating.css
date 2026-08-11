@@ -1,0 +1,14 @@
+.nc-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.nc-rating__stars {
+  display: inline-flex;
+  gap: 2px;
+  color: #FFB020;
+}
+.nc-rating__count {
+  font-size: 0.78rem;
+  color: var(--color-text-soft);
+}

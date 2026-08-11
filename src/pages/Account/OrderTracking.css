@@ -1,0 +1,70 @@
+.nc-track__timeline {
+  display: flex;
+  align-items: flex-start;
+  margin: 30px 0 40px;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+.nc-track__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 1;
+  min-width: 90px;
+  text-align: center;
+}
+.nc-track__dot {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: var(--color-secondary);
+  color: var(--color-text-soft);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  z-index: 1;
+  border: 2px solid var(--color-border);
+}
+.nc-track__step.is-done .nc-track__dot {
+  background: var(--color-success);
+  color: #fff;
+  border-color: var(--color-success);
+}
+.nc-track__step span { font-size: 0.74rem; color: var(--color-text-soft); font-weight: 600; }
+.nc-track__step.is-done span { color: var(--color-text); }
+.nc-track__line {
+  position: absolute;
+  top: 20px;
+  left: 55%;
+  width: 90%;
+  height: 2px;
+  background: var(--color-border);
+  z-index: 0;
+}
+.nc-track__line.is-done { background: var(--color-success); }
+
+.nc-track__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+.nc-track__items, .nc-track__card { padding: 20px; }
+.nc-track__items h4, .nc-track__card h4 { font-size: 0.9rem; margin-bottom: 14px; }
+.nc-track__item { display: flex; align-items: center; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--color-border); }
+.nc-track__item:last-child { border-bottom: none; }
+.nc-track__item img { width: 52px; height: 52px; border-radius: 4px; object-fit: cover; }
+.nc-track__item div { display: flex; flex-direction: column; gap: 4px; }
+.nc-track__item strong { font-size: 0.84rem; }
+.nc-track__item span { font-size: 0.76rem; color: var(--color-text-soft); }
+
+.nc-track__side { display: flex; flex-direction: column; gap: 16px; }
+.nc-track__card p { font-size: 0.8rem; color: var(--color-text-soft); margin-top: 4px; line-height: 1.5; }
+.nc-track__card strong { font-size: 0.85rem; }
+.nc-track__method { margin-top: 10px; font-weight: 600; color: var(--color-text) !important; }
+
+@media (max-width: 768px) {
+  .nc-track__grid { grid-template-columns: 1fr; }
+  .nc-track__timeline { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .nc-track__line { display: none; }
+}

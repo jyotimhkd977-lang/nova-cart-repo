@@ -1,0 +1,79 @@
+.nc-payment { padding: 20px 24px 80px; }
+.nc-payment__grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  margin-top: 30px;
+  align-items: start;
+}
+.nc-payment__methods { display: flex; flex-direction: column; gap: 14px; }
+.nc-payment__method {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 22px;
+  cursor: pointer;
+}
+.nc-payment__method.is-active { box-shadow: 0 0 0 2px var(--color-primary), var(--shadow-out); }
+.nc-payment__method input { accent-color: var(--color-primary); width: 16px; height: 16px; }
+.nc-payment__method-icon { font-size: 1.2rem; color: var(--color-primary); }
+.nc-payment__codfee {
+  margin-left: auto;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  background: #fff3ec;
+  padding: 4px 10px;
+  border-radius: 3px;
+}
+.nc-payment__codnote {
+  padding: 16px 20px;
+  font-size: 0.82rem;
+  color: var(--color-text-soft);
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+}
+
+.nc-payment__cardform {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow: hidden;
+}
+.nc-payment__cardform input {
+  padding: 13px 18px;
+  border-radius: 3px;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-in);
+  border: none;
+  outline: none;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+.nc-payment__row { display: flex; gap: 14px; }
+.nc-payment__row input { flex: 1; }
+
+.nc-payment__amount {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 14px 0 22px;
+}
+
+.nc-payment__success {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  padding: 60px 20px;
+}
+.nc-payment__successicon { font-size: 5rem; color: var(--color-success); }
+.nc-payment__success h1 { font-size: 1.8rem; margin-top: 10px; }
+.nc-payment__success p { color: var(--color-text-soft); max-width: 400px; margin-bottom: 16px; }
+.nc-payment__successactions { display: flex; gap: 14px; }
+
+@media (max-width: 900px) { .nc-payment__grid { grid-template-columns: 1fr; } }

@@ -1,0 +1,98 @@
+.nc-pdetails { padding: 20px 24px 40px; }
+
+.nc-pdetails__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+
+.nc-pdetails__mainimg {
+  aspect-ratio: 1/1;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  padding: 0;
+}
+.nc-pdetails__mainimg img { width: 100%; height: 100%; object-fit: cover; }
+
+.nc-pdetails__thumbs { display: flex; gap: 12px; margin-top: 14px; }
+.nc-pdetails__thumbs button {
+  width: 72px; height: 72px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: var(--shadow-out-sm);
+  opacity: 0.6;
+  transition: opacity 0.2s ease, box-shadow 0.2s ease;
+}
+.nc-pdetails__thumbs button.is-active { opacity: 1; box-shadow: 0 0 0 2px var(--color-primary); }
+.nc-pdetails__thumbs img { width: 100%; height: 100%; object-fit: cover; }
+
+.nc-pdetails__brand { color: var(--color-primary); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.6px; }
+.nc-pdetails__info h1 { font-size: 1.9rem; margin: 8px 0 12px; }
+
+.nc-pdetails__price { display: flex; align-items: baseline; gap: 12px; margin: 18px 0; }
+.nc-pdetails__price .now { font-family: var(--font-heading); font-size: 2rem; font-weight: 700; }
+.nc-pdetails__price .old { font-size: 1rem; color: var(--color-text-soft); text-decoration: line-through; }
+.nc-pdetails__price .pct { font-size: 0.8rem; font-weight: 700; color: var(--color-success); }
+
+.nc-pdetails__desc { color: var(--color-text-soft); font-size: 0.92rem; line-height: 1.7; margin-bottom: 24px; }
+
+.nc-pdetails__colors, .nc-pdetails__qty { margin-bottom: 22px; }
+.nc-pdetails__colors h5, .nc-pdetails__qty h5, .nc-pdetails__specs h5 { font-size: 0.82rem; color: var(--color-text-soft); margin-bottom: 10px; }
+.nc-pdetails__swatches { display: flex; gap: 10px; }
+.nc-pdetails__swatches button {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-out-sm);
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+}
+.nc-pdetails__swatches button.is-active { border-color: var(--color-primary); transform: scale(1.1); }
+
+.nc-pdetails__qtybox {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-in);
+  border-radius: 3px;
+  padding: 8px 20px;
+}
+.nc-pdetails__qtybox button { display: flex; color: var(--color-primary); }
+.nc-pdetails__qtybox span { font-weight: 700; min-width: 20px; text-align: center; }
+
+.nc-pdetails__actions { display: flex; gap: 14px; margin-bottom: 22px; }
+.nc-pdetails__actions .fk-btn { border: none; }
+.nc-pdetails__wishbtn {
+  width: 54px; height: 54px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.nc-pdetails__trust {
+  display: flex;
+  gap: 20px;
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.nc-pdetails__trust span { display: flex; align-items: center; gap: 6px; }
+
+.nc-pdetails__specs { padding: 20px 22px; }
+.nc-pdetails__spec-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(108,99,255,0.08);
+}
+.nc-pdetails__spec-row:last-child { border-bottom: none; }
+.nc-pdetails__spec-row span:first-child { color: var(--color-text-soft); }
+.nc-pdetails__spec-row span:last-child { font-weight: 600; }
+
+@media (max-width: 900px) {
+  .nc-pdetails__grid { grid-template-columns: 1fr; gap: 28px; }
+}

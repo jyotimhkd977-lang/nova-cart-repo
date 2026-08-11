@@ -1,0 +1,59 @@
+.nc-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: var(--font-button);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  border-radius: var(--radius-full);
+  transition: box-shadow 0.25s ease, transform 0.2s ease, background 0.25s ease, color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.nc-btn--full { width: 100%; }
+
+.nc-btn--sm { padding: 8px 18px; font-size: 0.8rem; }
+.nc-btn--md { padding: 13px 28px; font-size: 0.9rem; }
+.nc-btn--lg { padding: 16px 36px; font-size: 1rem; }
+
+.nc-btn--primary {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  box-shadow: 6px 6px 16px rgba(108, 99, 255, 0.35), -4px -4px 12px rgba(255, 255, 255, 0.4);
+}
+.nc-btn--primary:hover { box-shadow: 8px 8px 20px rgba(108, 99, 255, 0.45); }
+
+.nc-btn--accent {
+  background: linear-gradient(135deg, var(--color-accent), #ff8aa1);
+  color: #fff;
+  box-shadow: 6px 6px 16px rgba(255, 101, 132, 0.35);
+}
+
+.nc-btn--ghost {
+  background: var(--color-bg);
+  color: var(--color-text);
+  box-shadow: var(--shadow-out-sm);
+}
+.nc-btn--ghost:hover { box-shadow: var(--shadow-hover); }
+
+.nc-btn--outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1.5px solid var(--color-primary);
+}
+
+.nc-btn--danger {
+  background: var(--color-bg);
+  color: var(--color-danger);
+  box-shadow: var(--shadow-out-sm);
+}
+
+.nc-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.nc-btn__icon { display: inline-flex; align-items: center; font-size: 1.1em; }

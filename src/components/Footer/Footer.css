@@ -1,0 +1,102 @@
+.nc-footer {
+  margin-top: 60px;
+  background: #172337;
+  color: #ffffffb0;
+  padding: 48px 0 0;
+}
+.nc-footer .nc-navbar__logo { color: #fff; }
+.dark .nc-footer { background: #0d1017; }
+
+.nc-footer__grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr 1.4fr;
+  gap: 32px;
+  padding-bottom: 48px;
+}
+
+.nc-footer__brand p {
+  margin-top: 14px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #ffffff90;
+  max-width: 280px;
+}
+
+.nc-footer__social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.nc-footer__social a {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+.nc-footer__social a:hover { transform: translateY(-3px); background: var(--color-primary); }
+
+.nc-footer__col h4, .nc-footer__newsletter h4 {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #ffffffb0;
+  margin-bottom: 18px;
+}
+.nc-footer__col { display: flex; flex-direction: column; gap: 12px; }
+.nc-footer__col a {
+  font-size: 0.85rem;
+  color: #ffffff85;
+  transition: color 0.2s ease;
+}
+.nc-footer__col a:hover { color: #fff; }
+
+.nc-footer__newsletter p {
+  font-size: 0.85rem;
+  color: #ffffff85;
+  margin-bottom: 16px;
+}
+.nc-footer__newsletter form {
+  display: flex;
+  background: var(--color-bg);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-in);
+  padding: 4px 4px 4px 16px;
+  align-items: center;
+}
+.nc-footer__newsletter input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.82rem;
+  color: var(--color-text);
+}
+.nc-footer__newsletter button {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+  color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.nc-footer__bottom {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  padding: 18px 0;
+  text-align: center;
+}
+.nc-footer__bottom p {
+  font-size: 0.78rem;
+  color: #ffffff70;
+}
+
+@media (max-width: 992px) {
+  .nc-footer__grid { grid-template-columns: 1fr 1fr; }
+  .nc-footer__brand { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .nc-footer__grid { grid-template-columns: 1fr; }
+}

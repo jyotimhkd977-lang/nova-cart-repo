@@ -1,0 +1,13 @@
+.nc-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--color-text-soft);
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+.nc-breadcrumb__item { display: flex; align-items: center; gap: 8px; }
+.nc-breadcrumb a { color: var(--color-text-soft); transition: color 0.2s ease; }
+.nc-breadcrumb a:hover { color: var(--color-primary); }
+.nc-breadcrumb .is-current { color: var(--color-primary); font-weight: 600; }

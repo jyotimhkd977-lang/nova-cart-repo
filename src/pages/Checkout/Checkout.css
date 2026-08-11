@@ -1,0 +1,80 @@
+.nc-checkout { padding: 20px 24px 80px; }
+.nc-checkout__grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 28px;
+  margin-top: 30px;
+  align-items: start;
+}
+.nc-checkout__main { display: flex; flex-direction: column; gap: 20px; }
+.nc-checkout__section { padding: 24px; }
+.nc-checkout__section h3 {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 1rem; margin-bottom: 18px; color: var(--color-primary);
+}
+.nc-checkout__addr {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  background: var(--color-secondary);
+}
+.nc-checkout__addr.is-active { box-shadow: 0 0 0 2px var(--color-primary) inset; }
+.nc-checkout__addr input { margin-top: 4px; accent-color: var(--color-primary); }
+.nc-checkout__addr strong { font-size: 0.9rem; }
+.nc-checkout__addr p { font-size: 0.8rem; color: var(--color-text-soft); margin-top: 4px; }
+.nc-checkout__addlink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+.nc-checkout__default {
+  font-size: 0.6rem;
+  font-weight: 700;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-left: 6px;
+}
+.nc-checkout__phone { color: var(--color-text-soft) !important; font-size: 0.76rem !important; }
+
+.nc-checkout__addrform {
+  margin-top: 14px;
+  padding: 16px;
+  background: var(--color-secondary);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.nc-checkout__addrform-row { display: flex; gap: 12px; }
+.nc-checkout__addrform input {
+  flex: 1;
+  padding: 11px 14px;
+  border-radius: 3px;
+  border: 1px solid var(--color-border);
+  background: #fff;
+  outline: none;
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+.nc-checkout__addrform-actions { display: flex; gap: 10px; }
+
+.nc-checkout__summary { padding: 24px; position: sticky; top: calc(var(--nav-h) + 20px); }
+.nc-checkout__summary h3 { font-size: 1.05rem; margin-bottom: 16px; }
+.nc-checkout__line {
+  display: flex; justify-content: space-between;
+  font-size: 0.82rem; color: var(--color-text-soft);
+  padding: 6px 0;
+}
+
+@media (max-width: 900px) { .nc-checkout__grid { grid-template-columns: 1fr; } }

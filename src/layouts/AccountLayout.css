@@ -1,0 +1,15 @@
+.nc-account { padding: 20px 24px 80px; }
+.nc-account__grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.nc-account__content {
+  padding: 32px;
+  min-height: 420px;
+}
+@media (max-width: 768px) {
+  .nc-account__grid { grid-template-columns: 1fr; }
+  .nc-sidebar { position: static; }
+}

@@ -1,0 +1,38 @@
+.nc-carousel { margin: 56px 0; }
+.nc-carousel__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.nc-carousel__head h2 { font-size: 1.5rem; font-weight: 700; }
+.nc-carousel__head p { color: var(--color-text-soft); font-size: 0.85rem; margin-top: 4px; }
+
+.nc-carousel__controls { display: flex; align-items: center; gap: 10px; }
+.nc-carousel__viewall {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-right: 4px;
+}
+.nc-carousel__controls button {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-out-sm);
+  display: flex; align-items: center; justify-content: center;
+  transition: box-shadow 0.2s ease;
+}
+.nc-carousel__controls button:hover { box-shadow: var(--shadow-hover); }
+
+.nc-carousel__track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 4px;
+}
+.nc-carousel__track > * {
+  flex: 0 0 250px;
+  scroll-snap-align: start;
+}

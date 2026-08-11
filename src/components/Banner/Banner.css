@@ -1,0 +1,63 @@
+.nc-banner {
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  overflow: hidden;
+  position: relative;
+  min-height: 180px;
+}
+.nc-banner--primary { background: linear-gradient(135deg, #6C63FF, #8A83FF); }
+.nc-banner--accent { background: linear-gradient(135deg, #FF6584, #ff8aa1); }
+.nc-banner--dark { background: linear-gradient(135deg, #2d2f45, #3d4166); }
+
+.nc-banner__text { color: #fff; max-width: 60%; z-index: 1; }
+.nc-banner__eyebrow {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  background: rgba(255,255,255,0.2);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 12px;
+}
+.nc-banner__text h3 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.nc-banner__text p {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 18px;
+}
+.nc-banner__cta {
+  display: inline-block;
+  background: #fff;
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 11px 26px;
+  border-radius: var(--radius-full);
+  transition: transform 0.2s ease;
+}
+.nc-banner__cta:hover { transform: translateY(-2px); }
+
+.nc-banner__img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  flex-shrink: 0;
+}
+
+@media (max-width: 640px) {
+  .nc-banner { flex-direction: column; text-align: center; }
+  .nc-banner__text { max-width: 100%; }
+  .nc-banner__img { width: 110px; height: 110px; }
+}

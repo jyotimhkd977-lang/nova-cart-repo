@@ -1,0 +1,25 @@
+.nc-skeleton {
+  background: linear-gradient(100deg, var(--color-bg) 30%, #dfe4ec 50%, var(--color-bg) 70%);
+  background-size: 200% 100%;
+  animation: nc-shimmer 1.5s ease-in-out infinite;
+}
+
+.dark .nc-skeleton {
+  background: linear-gradient(100deg, var(--color-secondary) 30%, #343a56 50%, var(--color-secondary) 70%);
+  background-size: 200% 100%;
+}
+
+@keyframes nc-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.nc-skeleton-card {
+  padding: 14px;
+}
+
+.nc-skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}

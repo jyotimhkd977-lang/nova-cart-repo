@@ -1,0 +1,32 @@
+.nc-modal__scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 22, 32, 0.55);
+  backdrop-filter: blur(4px);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.nc-modal {
+  width: 100%;
+  max-width: 640px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px;
+  border-radius: var(--radius-lg);
+}
+.nc-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.nc-modal__header button {
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-out-sm);
+  display: flex; align-items: center; justify-content: center;
+}
