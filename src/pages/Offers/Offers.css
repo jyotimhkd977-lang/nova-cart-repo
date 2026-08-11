@@ -1,0 +1,74 @@
+.nc-offers { padding: 20px 24px 80px; }
+.nc-offers__hero {
+  margin-top: 20px;
+  padding: 40px;
+  background: linear-gradient(135deg, var(--color-accent), #ff8aa1);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  color: #fff;
+}
+.nc-offers__eyebrow {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  padding: 5px 14px;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.nc-offers__hero h1 { font-size: 1.8rem; color: #fff; margin-bottom: 8px; }
+.nc-offers__hero p { color: rgba(255,255,255,0.85); font-size: 0.9rem; }
+
+.nc-offers__timer { display: flex; gap: 12px; }
+.nc-offers__timer div {
+  background: rgba(255,255,255,0.2);
+  border-radius: 16px;
+  padding: 14px 18px;
+  text-align: center;
+  min-width: 64px;
+}
+.nc-offers__timer strong { display: block; font-family: var(--font-heading); font-size: 1.6rem; }
+.nc-offers__timer span { font-size: 0.68rem; opacity: 0.85; }
+
+@media (max-width: 640px) {
+  .nc-offers__hero { flex-direction: column; text-align: center; }
+}
+
+.nc-offers__coupons {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.nc-offers__coupon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 18px;
+  border-left: 3px dashed var(--color-primary);
+}
+.nc-offers__coupon-code {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--color-primary);
+  letter-spacing: 0.5px;
+}
+.nc-offers__coupon-left p { font-size: 0.8rem; color: var(--color-text); margin: 6px 0 4px; }
+.nc-offers__coupon-min { font-size: 0.72rem; color: var(--color-text-soft); }
+.nc-offers__coupon button {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 14px;
+  border-radius: 2px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 0.76rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+@media (max-width: 900px) { .nc-offers__coupons { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .nc-offers__coupons { grid-template-columns: 1fr; } }

@@ -1,0 +1,87 @@
+.nc-auth {
+  min-height: calc(100vh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+.nc-auth__card {
+  width: 100%;
+  max-width: 420px;
+  padding: 40px;
+}
+.nc-auth__card h1 { font-size: 1.6rem; text-align: center; }
+.nc-auth__card > p { text-align: center; color: var(--color-text-soft); font-size: 0.85rem; margin: 8px 0 28px; }
+
+.nc-auth__field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-in);
+  border-radius: 3px;
+  padding: 14px 20px;
+  margin-bottom: 16px;
+  color: var(--color-text-soft);
+}
+.nc-auth__field input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 0.88rem;
+  color: var(--color-text);
+}
+
+.nc-auth__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.78rem;
+  margin: 4px 0 22px;
+  color: var(--color-text-soft);
+}
+.nc-auth__row a { color: var(--color-primary); font-weight: 600; }
+.nc-auth__check { display: flex; align-items: center; gap: 6px; }
+.nc-auth__check input { accent-color: var(--color-primary); }
+
+.nc-auth__terms { font-size: 0.72rem; color: var(--color-text-soft); margin-bottom: 20px; line-height: 1.5; }
+
+.nc-auth__divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 26px 0 18px;
+  color: var(--color-text-soft);
+  font-size: 0.75rem;
+}
+.nc-auth__divider::before, .nc-auth__divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(108,99,255,0.15);
+}
+.nc-auth__divider span { padding: 0 12px; }
+
+.nc-auth__social { display: flex; gap: 12px; }
+.nc-auth__social button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border-radius: 3px;
+  background: var(--color-bg);
+  box-shadow: var(--shadow-out-sm);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.nc-auth__switch {
+  text-align: center;
+  margin-top: 26px;
+  font-size: 0.85rem;
+  color: var(--color-text-soft);
+}
+.nc-auth__switch a { color: var(--color-primary); font-weight: 700; }
